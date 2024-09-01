@@ -85,7 +85,7 @@ services:
     environment:
       ## Comment out the next variable if you want Watchtower to auto-update all containers, running on the host,
       ## while now it will update only those with the label "com.centurylinklabs.watchtower.enable=true"
-      WATCHTOWER_LABEL_ENABLE: true
+      WATCHTOWER_LABEL_ENABLE: "true"
       WATCHTOWER_CLEANUP: ${WATCHTOWER_CLEANUP}
       WATCHTOWER_POLL_INTERVAL: ${WATCHTOWER_POLL_INTERVAL}
       WATCHTOWER_TIMEOUT: ${WATCHTOWER_TIMEOUT}
